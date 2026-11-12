@@ -1,0 +1,26 @@
+.auth-page { min-height: 630px; display: grid; grid-template-columns: 1fr 1fr; gap: 8%; padding-top: 42px; padding-bottom: 15px; }
+.auth-visual { position: relative; min-height: 530px; overflow: hidden; background: #e8e9e1; }
+.auth-visual::after { position: absolute; inset: 40% 0 0; content: ""; background: linear-gradient(transparent, #1d261ea0); }
+.auth-visual img { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; }
+.auth-visual > p { position: absolute; z-index: 2; bottom: 29px; left: 28px; margin: 0; color: #fff; font: 500 25px/1.35 var(--serif); }
+.auth-photo-note { position: absolute; z-index: 2; top: 17px; left: 17px; padding: 10px 12px; background: #f8f8f2ed; color: #69755d; font-size: 8px; letter-spacing: .1em; }
+.auth-panel { align-self: center; max-width: 390px; padding: 5px 0 20px; }
+.auth-back { display: inline-flex; align-items: center; gap: 7px; margin-bottom: 39px; color: #858b81; font-size: 10px; }
+.auth-panel h1 { margin: 12px 0 10px; font: 500 48px/1.04 var(--serif); letter-spacing: -.04em; }
+.auth-panel > p { max-width: 335px; margin: 0; color: #858a81; font-size: 11px; line-height: 1.8; }
+.auth-form { margin-top: 21px; }
+.auth-form > label { margin-top: 13px; }
+.auth-submit { width: 100%; justify-content: space-between; margin-top: 20px; }
+.auth-switch { display: flex; justify-content: space-between; gap: 10px; margin-top: 19px; color: #858a81; font-size: 9px; }
+.auth-switch a { display: flex; align-items: center; gap: 5px; color: var(--olive); font-weight: 600; }
+.auth-reassurance { display: flex; align-items: center; gap: 6px; margin-top: 28px; color: #969b91; font-size: 9px; }
+.auth-reassurance svg { color: var(--olive); }
+.auth-form .form-error { margin-top: 13px; }
+@media (max-width: 760px) {
+  .auth-page { min-height: 0; grid-template-columns: 1fr; gap: 0; padding-top: 20px; }
+  .auth-visual { min-height: 180px; height: 180px; }
+  .auth-visual > p { bottom: 17px; left: 19px; font-size: 20px; }
+  .auth-panel { width: 100%; max-width: none; padding: 24px 0 20px; }
+  .auth-back { margin-bottom: 23px; }
+  .auth-panel h1 { font-size: 42px; }
+}
